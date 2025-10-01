@@ -12,36 +12,39 @@ The repository includes workflows for CosMx single-cell spatial transcriptomics,
 **Repository Structure**
 
 SNH_spatial_transcriptomics/
-├── CosMx/                 # Single-cell spatial transcriptomics workflows
-│   ├── preprocessing/      # QC, segmentation, filtering
-│   ├── analysis/           # Clustering, cell-cell interactions, pathway analysis
-│   └── visualization/      # UMAPs, heatmaps, spatial plots
 
-├── Visium/                # Whole-transcriptome spatial workflows
-│   ├── preprocessing/      # QC, alignment, gene filtering
-│   ├── integration/        # Integration with CosMx and histology
-│   └── visualization/      # Spatial maps, differential expression plots
-
-├── Metatranscriptomics/   # Microbial and viral transcriptomic workflows
-│   ├── preprocessing/      # Host read removal, QC
-│   ├── analysis/           # HERV/viral gene quantification
-│   └── visualization/      # Heatmaps, volcano plots
-
-├── Main/   # 
-│   ├── environment.yml     # Conda environment for reproducibility
-│   ├── LICENSE             # MIT License
-│   └── .gitignore          # Ignored files
-│   └── README.md           # This document
-
+	•	CosMx/ – Single-cell spatial transcriptomics workflows
+    •	preprocessing/ – Quality control, segmentation, filtering
+	  •	analysis/ – Clustering, cell-cell interactions, pathway analysis
+	  •	visualization/ – UMAPs, heatmaps, spatial plots
+	•	Visium/ – Whole-transcriptome spatial workflows
+	  •	preprocessing/ – QC, alignment, gene filtering
+	  •	integration/ – Integration with CosMx and histology
+	  •	visualization/ – Spatial maps, differential expression plots
+	•	Metatranscriptomics/ – Microbial and viral transcriptomics workflows
+	  •	preprocessing/ – Host read removal, QC
+	  •	analysis/ – HERV/viral gene quantification
+	  •	visualization/ – Heatmaps, volcano plots
+	•	Supplementary/ – Miscellaneous scripts, helper functions
+	•	environment.yml – Conda environment for reproducibility
+	•	LICENSE – MIT License
+	•	.gitignore – Ignored files
+	•	README.md – This document
+  
 ⸻
 
 **Contributors**
 
 Dr Amber Bozward — CosMx and Visium workflows, integration, figure generation
+
 Dr Mahboobeh Behruznia - Metatranscriptomics sequencing analysis
+
 John Cole - CosMx and Visium workflows, integration, figure generation
+
 Chiranjit Das - Figure generation
+
 Kylie Savoye - CosMx neighbourhood analysis, figure generation
+
 Professor Ye Oo -
   
 ⸻
