@@ -1,8 +1,6 @@
 # SNH_AIH_spatial_transcriptomics
-Workflows and code for spatial and meta-transcriptomic analysis of seronegative hepatitis and autoimmune hepatitis samples.
 
-
-# Spatial Transcriptomics Figure Generation
+# CosMx Pre-processing the Data and Figure Generation
 
 This repository provides an **easy-to-use pipeline for pre-processing CosMx data and generating figures**. It is designed for liver disease research (e.g., autoimmune hepatitis (AIH), seronegative (SN) liver disease, and donor (D) samples) and can produce UMAPs, barplots, boxplots, heatmaps, dotplots, and CellChat-based cell-cell interaction visualizations.  
 
@@ -29,7 +27,7 @@ The repository files are structured by the below:
 
 ---
 
-## Data structure 
+## 📊 Data structure 
 
 ```
 ├── data/                          
@@ -61,13 +59,13 @@ install.packages(c("dplyr", "ggplot2", "pheatmap", "patchwork", "ggrepel"))
 BiocManager::install(c("SingleR", "CellChat", "Seurat"))
 ```
 
-•	Input data: a Seurat/CosMx object with:
+•	Input data: a Seurat object with:
 	•	Annotated cell types in meta.data$final_cell_types
-	•	Expression layers including data and counts if using CosMx data
+	•	Expression layers including data and counts
 
 ---
 
-🚀 Usage
+## 🚀 Usage
 	1.	Clone the repository:
 
 ```
@@ -97,12 +95,12 @@ source("scripts/combined_plots.R")
 
 ---
 
-📝 Customization
+## 📝 Customisation
 	•	Modify genes for plots: Edit the genes_to_plot vector in the script for boxplots and dotplots.
 	•	Change cell types: Ensure final_cell_types contains the desired annotations for coloring and subsetting.
 
 ---
 
-📜 License
+## 📜 License
 
 This repository is provided for academic and research purposes only. Please cite appropriately if used in publications.
