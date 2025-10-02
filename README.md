@@ -31,17 +31,53 @@ The repository files are structured by the below:
 
 ## ⚙️ Requirements
 
-- **R ≥ 4.2**
-- Required packages:
+### R Version
+- R >= 4.2.0
 
+### Required R Packages
+Make sure the following packages are installed before running the scripts:
+
+- `Seurat` (>= 5.0)
+- `ggplot2`
+- `dplyr`
+- `tidyr`
+- `patchwork`
+- `Matrix`
+- `stringr`
+- `cowplot`
+- `ggrepel`
+- `gridExtra`
+- `hdf5r`
+- `spatstat` (if using spatial statistics)
+- `SeuratDisk` (if working with `.h5Seurat` or converting from AnnData)
+
+You can install missing packages with:
 ```r
-install.packages(c("dplyr", "ggplot2", "pheatmap", "patchwork", "ggrepel"))
-BiocManager::install(c("SingleR", "CellChat", "Seurat"))
+install.packages(c("ggplot2", "dplyr", "tidyr", "patchwork", 
+                   "Matrix", "stringr", "cowplot", "ggrepel", "gridExtra"))
 ```
 
-•	Input data: a Seurat object with:
-	•	Annotated cell types in meta.data$final_cell_types
-	•	Expression layers including data and counts
+And from Bioconductor if needed:
+
+```r
+install.packages("Seurat")
+install.packages("SeuratDisk")
+install.packages("spatstat.geom")
+install.packages("spatstat.core")
+```
+
+### Input Data
+
+The scripts assume 10x Genomics Space Ranger outputs in the following format:
+
+data/
+  sample1/
+    filtered_feature_bc_matrix.h5
+    spatial/
+      tissue_hires_image.png
+      scalefactors_json.json
+  sample2/
+    ...
 
 ---
 
