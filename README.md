@@ -8,7 +8,7 @@ The scripts are structured for **reproducibility**, with figures saved automatic
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 The repository files are structured by the below:
 
@@ -27,7 +27,7 @@ The repository files are structured by the below:
 
 ---
 
-## 📊 Data structure 
+## Data structure 
 
 ```
 ├── data/                          
@@ -49,7 +49,7 @@ The repository files are structured by the below:
 
 ---
 
-## ⚙️ Requirements
+## Requirements
 
 - **R ≥ 4.2**
 - Required packages:
@@ -65,7 +65,7 @@ BiocManager::install(c("SingleR", "CellChat", "Seurat"))
 
 ---
 
-## 🚀 Usage
+## Usage
 	1.	Clone the repository:
 
 ```
@@ -95,7 +95,7 @@ source("scripts/combined_plots.R")
 
 ---
 
-## 📝 Customisation
+## Customisation
 	•	Modify genes for plots: Edit the genes_to_plot vector in the script for boxplots and dotplots.
 	•	Change cell types: Ensure final_cell_types contains the desired annotations for coloring and subsetting.
 
